@@ -34,8 +34,8 @@ Before running the application, ensure that you have installed the required depe
 
 ```bash
 pip install -r requirements.txt
-Additionally, set the environment variables in the .env file with the credentials for your Mercado Libre application.
 ```
+Additionally, set the environment variables in the .env file with the credentials for your Mercado Libre application.
 
 ## Technologies Used
 Python
