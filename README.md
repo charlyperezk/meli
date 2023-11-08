@@ -11,6 +11,7 @@ The project involves data extraction, transformation, and loading (ETL) processe
 - Secure storage with data encryption.
 - ETL (Extract, Transform, Load) pipeline for handling large datasets.
 - Abides by DRY and SOLID software design principles.
+- Utilizes the Factory pattern in authentication and user control.
 
 ## Usage
 
@@ -20,13 +21,13 @@ To use the Data Integration with Meli API project, follow these steps:
 
 2. Configure the necessary credentials in the `.env` file. Make sure to provide values for `CLIENT_ID`, `CLIENT_SECRET`, `CODE`, and `REDIRECT_URI`.
 
-3. Activate your virtual environment with `env\Scripts\activate`.
+3. Activate your virtual environment with `venv\Scripts\activate`.
 
 4. Run the application with `python main.py`.
 
-5. Set up the necessary database by selecting Option 1 in the menu.
+5. Execute the `Base.metadata.create_all` command to create the necessary databases on the first run.
 
-6. Follow the on-screen instructions to configure data extraction and processing.
+6. The user inputs a search term, and the application accesses the Mercado Libre API to predict the category. Then, it retrieves the filters specific to that category and presents them to the user.
 
 ## Configuration
 
@@ -35,6 +36,7 @@ Before running the application, ensure that you have installed the required depe
 ```bash
 pip install -r requirements.txt
 ```
+
 Additionally, set the environment variables in the .env file with the credentials for your Mercado Libre application.
 
 ## Technologies Used
@@ -65,6 +67,7 @@ This project is licensed under the MIT License. Please refer to the LICENSE.md f
 If you have questions or comments about this project, feel free to reach out:
 
 Developer: Carlos Pérez Küper
+
 Email: carlosperezkuper@gmail.com
 
 ## Acknowledgments
