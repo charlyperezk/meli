@@ -19,7 +19,7 @@ To use the Data Integration with Meli API project, follow these steps:
 
 1. Clone this repository to your local machine.
 
-2. Configure the necessary credentials in the `.env` file. Make sure to provide values for `CLIENT_ID`, `CLIENT_SECRET`, `CODE`, and `REDIRECT_URI`.
+2. Configure the necessary credentials in the `.env` file. Make sure to provide values for `DATABASE_URL` ,`CLIENT_ID`, `CLIENT_SECRET`, `CODE`, and `REDIRECT_URI`.
 
 3. Activate your virtual environment with `venv\Scripts\activate`.
 
